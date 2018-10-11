@@ -73,6 +73,10 @@ function largest(array){
 }
 
 function compare(array_1, array_2) {
+    console.table({array_1, array_2});
+    if (array_1 === undefined || array_2 === undefined){
+        return false;
+    }
     if (array_1.length !== array_2.length){
         return false;
     }
@@ -128,9 +132,10 @@ function divisors(array, divisor) {
             new_array.push(array[value])
         }
     }
+    return new_array
 }
 
-function multiples_blank(n, m){
+function multiples_old(n, m){
 
 }
 

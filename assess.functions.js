@@ -105,6 +105,11 @@ QUnit.test("funcCompareArrays",
             "return false because more than just the first or last index should be compared."
         );
 
+        assert.notOk(
+            compare(undefined, [1,2,3]),
+            "Check if the values are defined"
+        );
+
         assert.ok(
             compare([], []),
             "Two empty arrays should be the same"
